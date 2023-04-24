@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #fc5c7d, #6a82fb);
+}
+
+.open-modal-btn {
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal__inner {
+  width: 400px;
+  position: relative;
+  top: 20%;
+  margin: auto;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  animation: modalShow 0.3s linear;
+}
+
+.modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background: #e26e70;
+  color: #fff;
+}
+
+.modal__header i {
+  transform: rotate(0);
+  transition: transform 0.3s;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.modal__header i:hover {
+  transform: rotate(180deg);
+}
+
+.modal__body {
+  padding: 15px;
+}
+
+.modal__body h2 {
+  color: #e26e70;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.modal__footer {
+  padding: 15px;
+  text-align: right;
+}
+
+.modal__footer button {
+  padding: 12px 20px;
+  color: #fff;
+  background: #e26e70;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes modalShow {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
