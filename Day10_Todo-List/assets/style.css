@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #ffe800, #799f0c);
+}
+
+.container {
+  width: 400px;
+  margin: 100px auto;
+  background: #fff;
+  padding-top: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+form {
+  border-bottom: 2px solid #aaa;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+form input {
+  border: none;
+  outline: none;
+  font-size: 22px;
+  margin-right: 12px;
+}
+
+form button {
+  border: none;
+  outline: none;
+  font-size: 22px;
+  padding: 6px 15px;
+  color: #fff;
+  background: yellowgreen;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s ease-in;
+}
+
+form button:hover {
+  background: rgb(130, 165, 54);
+}
+
+.todos {
+  list-style: none;
+}
+
+.todos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.todos span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.completed {
+  color: #aaa;
+}
+
+.completed span {
+  text-decoration: line-through;
+  margin-right: 40px;
+}
+
+i {
+  cursor: pointer;
+}
